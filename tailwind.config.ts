@@ -8,9 +8,13 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        dollars: "url('/image/dollars.webp')",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        colorFont: " #000000",
+        colorFont2: "#FFFFFF",
+        colorAccent: "#0AD314",
       },
     },
   },
