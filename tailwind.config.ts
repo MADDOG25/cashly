@@ -12,6 +12,7 @@ export default {
         dollars: "url('/image/dollars.webp')",
       },
       colors: {
+        colorBg: "#FFFFFF",
         colorFont: " #000000",
         colorFont2: "#FFFFFF",
         colorAccent: "#0AD314",

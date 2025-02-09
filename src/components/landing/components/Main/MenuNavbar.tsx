@@ -19,7 +19,7 @@ export default function MenuNavbar() {
       </div>
       {/* Navegacion */}
       <nav className="absolute left-1/2 transform -translate-x-1/2">
-        <ul className="grid grid-cols-3 gap-4 font-normal">
+        <ul className="grid grid-cols-3 gap-4 text-lg font-medium">
           <li className="text-center">
             <a href="/funciones" aria-label="funciones">
               Funciones

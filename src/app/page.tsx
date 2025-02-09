@@ -1,8 +1,8 @@
 import Main from "@/components/landing/Main";
-// import About from "@/components/landing/About";
-// import Contact from "@/components/landing/Contact";
-// import Features from "@/components/landing/Features";
+import About from "@/components/landing/About";
+import Features from "@/components/landing/Features";
 // import Pricing from "@/components/landing/Pricing";
+// import Contact from "@/components/landing/Contact";
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
         <link rel="icon" href="/app/favicon.ico" sizes="any" />
       </header>
       <Main />
-      {/* <About />
+      <About />
       <Features />
-      <Pricing />
+      {/*<Pricing />
       <Contact /> */}
     </>
   );
