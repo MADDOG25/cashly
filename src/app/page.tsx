@@ -1,7 +1,7 @@
 import Main from "@/components/landing/Main";
 import About from "@/components/landing/About";
 import Features from "@/components/landing/Features";
-// import Pricing from "@/components/landing/Pricing";
+import Pricing from "@/components/landing/Pricing";
 // import Contact from "@/components/landing/Contact";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
       <Main />
       <About />
       <Features />
-      {/*<Pricing />
-      <Contact /> */}
+      <Pricing />
+      {/* <Contact /> */}
     </>
   );
 }

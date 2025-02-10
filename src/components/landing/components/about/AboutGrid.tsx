@@ -5,7 +5,7 @@ export default function AboutGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-4 md:gap-8 md:p-8">
       {/* Subtitle and description */}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center px-6">
         <div>
           <h2 className="font-bold text-5xl text-colorFont">
             Simplifica tu vida financiera con Cashly

@@ -28,6 +28,7 @@ const features = [
 export default function FeatureGrid() {
   return (
     <div className="grid grid-cols-1 justify-center gap-4 md:gap-8 md:p-8">
+        {/* Subtitle and description */}
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-bold text-5xl text-colorFont">¿Qué esperas?</h2>
         <p className="font-medium text-colorFont text-lg mt-4 text-left">
@@ -35,6 +36,7 @@ export default function FeatureGrid() {
           gestionar tus finanzas sea sencillo
         </p>
       </div>
+      {/* Palets */}
       <div className="flex flex-col justify-center items-center">
         <ul className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 md:gap-8 md:p-8">
           {features.map((feature, index) => (
