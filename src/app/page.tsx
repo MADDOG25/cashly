@@ -2,7 +2,7 @@ import Main from "@/components/landing/Main";
 import About from "@/components/landing/About";
 import Features from "@/components/landing/Features";
 import Pricing from "@/components/landing/Pricing";
-// import Contact from "@/components/landing/Contact";
+import Contact from "@/components/landing/Contact";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <About />
       <Features />
       <Pricing />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }

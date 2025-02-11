@@ -46,7 +46,7 @@ export default function PriceGrid() {
         <h2 className="text-4xl font-bold">Precios</h2>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3 px-8 py-8">
+      <div className="grid gap-14 md:grid-cols-3 px-20 py-8">
         {plans.map((plan, index) => (
           <div
             key={index}
