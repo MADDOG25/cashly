@@ -1,6 +1,6 @@
 import React from "react";
-import MenuNavbar from "./components/Main/MenuNavbar";
-import TitleCta from "./components/Main/TitleCta";
+import MenuNavbar from "./components/header/MenuNavbar";
+import TitleCta from "./components/header/TitleCta";
 
 export default function Main() {
   return (

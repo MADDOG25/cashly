@@ -1,4 +1,4 @@
-import Main from "@/components/landing/Main";
+import Main from "@/components/landing/Header";
 import About from "@/components/landing/About";
 import Features from "@/components/landing/Features";
 import Pricing from "@/components/landing/Pricing";
