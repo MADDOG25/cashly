@@ -58,7 +58,7 @@ export default function AboutGrid() {
         </div>
       </div>
       {/* Image */}
-      <div className="flex justify-center items-center">
+      <div className="flex mt-4 md:mt-0 justify-center items-center">
         <Image
           src="/image/savings.webp"
           alt="savings image"

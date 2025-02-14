@@ -10,9 +10,11 @@ export default function Contact() {
       </div>
       {/* Contenido de contacto */}
       <div className="flex flex-col items-center justify-center">
-        <h2 className="text-6xl font-bold text-colorFont2">Contacto</h2>
+        <h2 className="text-5xl md:text-6xl font-bold text-colorFont2">
+          Contacto
+        </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 p-4 justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6 p-4 justify-center items-center">
         <a href="mailto:mdog1525@gmail.com" target="_blank" rel="noreferrer">
           <Image
             alt="gmail icon"
