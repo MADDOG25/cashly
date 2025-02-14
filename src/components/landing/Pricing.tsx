@@ -3,7 +3,7 @@ import PriceGrid from "./components/pricing/PriceGrid";
 
 export default function Pricing() {
   return (
-    <section className="bg-colorBg py-40 mb-20">
+    <section id="precios" className="bg-colorBg py-40 mb-20">
       <PriceGrid />
     </section>
   );

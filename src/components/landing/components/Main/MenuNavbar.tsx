@@ -4,11 +4,12 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 const navigation = [
-  { name: "Funciones", href: "/funciones" },
-  { name: "Precios", href: "/precios" },
-  { name: "Acerca de", href: "/acercade" },
+  { name: "Funciones", to: "funciones" },
+  { name: "Precios", to: "precios" },
+  { name: "Acerca de", to: "acercade" },
 ];
 
 export default function Example() {
@@ -50,13 +51,16 @@ export default function Example() {
         {/* Menu de navegacion */}
         <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
-              className="text-xl font-medium text-colorFont2"
+              to={item.to}
+              smooth={true}
+              offset={80}
+              duration={500}
+              className="text-xl font-medium text-colorFont2 cursor-pointer"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -107,13 +111,16 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-4 py-12">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-colorFont2 hover:bg-white hover:text-colorFont"
+                    to={item.to}
+                    smooth={true}
+                    offset={80}
+                    duration={500}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold text-colorFont2 hover:bg-white hover:text-colorFont cursor-pointer"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="py-8">
