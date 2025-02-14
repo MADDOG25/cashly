@@ -42,11 +42,11 @@ const plans = [
 export default function PriceGrid() {
   return (
     <div className="text-colorFont">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <div className="max-w-4xl md:max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold">Precios</h2>
       </div>
 
-      <div className="grid gap-14 md:grid-cols-3 px-20 py-8">
+      <div className="grid gap-14 md:grid-cols-3 px-10 lg:px-20 py-8">
         {plans.map((plan, index) => (
           <div
             key={index}
@@ -69,7 +69,7 @@ export default function PriceGrid() {
             </div>
             <a
               href={plan.buttonHref}
-              className={`my-8 w-fit px-6 py-2.5 rounded-xl font-semibold ${plan.buttonStyle}`}
+              className={`my-8 w-fit px-6 py-2.5 rounded-xl font-semibold text-base text-center ${plan.buttonStyle}`}
             >
               {plan.buttonText}
             </a>

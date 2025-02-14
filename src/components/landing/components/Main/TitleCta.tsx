@@ -2,11 +2,11 @@ import React from "react";
 
 export default function TitleCta() {
   return (
-    <div className="py-40 max-w-4xl mx-auto text-center">
+    <div className="py-60 px-4 md:px-6 max-w-4xl mx-auto text-center">
       <h1 className="font-bold text-6xl text-colorFont2">
         Controla todos tus activos desde un solo lugar.
       </h1>
-      <p className="font-semibold text-2xl mt-6 mb-8 text-colorFont2">
+      <p className="font-semibold text-2xl mt-8 mb-8 text-colorFont2">
         Cashly es una plataforma de confianza para ahorrar tu dinero.
         <br /> Hacemos registros claros y mantenemos tus finanzas seguras.
       </p>
