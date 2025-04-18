@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { useBudgetStore } from "@/store/budgetStore";
 
@@ -7,7 +9,10 @@ const IncomeForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (incomeInput <= 0) return;
+    if (incomeInput <= 0) {
+      alert("Por favor, ingresa un monto válido.");
+      return;
+    }
 
     setIncome(incomeInput);
     alert("Ingreso actualizado ✅");
@@ -16,7 +21,7 @@ const IncomeForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-sm mx-auto bg-white p-4 rounded-2xl shadow-md space-y-4"
+      className="max-w-sm mx-auto bg-colorBg p-4 rounded-2xl shadow-2xl space-y-4"
     >
       <h2 className="text-xl font-semibold text-gray-800">
         Ingresos Mensuales
@@ -32,13 +37,13 @@ const IncomeForm = () => {
           value={incomeInput}
           onChange={(e) => setIncomeInput(Number(e.target.value))}
           className="mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
-          min={0}
+          placeholder="ingresa el monto"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+        className="w-full bg-colorAccent text-colorFont py-2 px-4 rounded-lg font-bold"
       >
         Guardar ingreso
       </button>

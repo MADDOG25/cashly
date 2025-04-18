@@ -3,6 +3,7 @@ import About from "@/components/landing/About";
 import Features from "@/components/landing/Features";
 import Pricing from "@/components/landing/Pricing";
 import Contact from "@/components/landing/Contact";
+import DashboardPage from "@/page/DashboardPage";
 
 export default function Home() {
   return (
@@ -10,11 +11,12 @@ export default function Home() {
       <header>
         <link rel="icon" href="/app/favicon.ico" sizes="any" />
       </header>
-      <Main />
+      {/* <Main />
       <About />
       <Features />
       <Pricing />
-      <Contact />
+      <Contact /> */}
+      <DashboardPage />
     </>
   );
 }
